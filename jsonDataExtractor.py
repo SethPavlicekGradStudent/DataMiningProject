@@ -5,10 +5,6 @@ class JSONDataExtractor():
         self.valid_df = True
 
     def extractHeroInventory(self,match):
-<<<<<<< HEAD
-
-=======
->>>>>>> d44a1b1ecfa856aeb800f287a039e5a617683303
         try:
             if match is not None:
                 data = [
