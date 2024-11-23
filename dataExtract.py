@@ -24,7 +24,7 @@ def main(sleep_time = 2):
                 file_path = 'veryLargeAmountsOfData.csv'
                 if os.path.isfile(file_path):
                     # Append the DataFrame to the existing CSV file without overwriting
-                    table.df.to_csv(file_path, mode='a', header=not pd.io.common.file_exists(file_path), index=False)
+                    table.to_csv(file_path, mode='a', header=not pd.io.common.file_exists(file_path), index=False)
                     print(table)
                 else:
                     # If the file doesn't exist, create a new CSV file
